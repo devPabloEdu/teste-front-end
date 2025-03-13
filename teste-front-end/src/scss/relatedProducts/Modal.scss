@@ -1,0 +1,27 @@
+.modalContainer{
+    justify-items: center;
+    width: 769px;
+    height: 299px;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    top: 30%;
+    left: 20%;
+    z-index: 12;
+    border: solid rgba(0, 0, 0, 0.171) 1px;
+    box-shadow: rgba(0, 0, 0, 0.356) 8px 1px 800px;
+        .modalContent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ModalImg{
+            width: 247px;
+            height: 193px;
+            margin: 10px;
+        }
+        .FecharModal{
+            position: fixed;
+            left: 75.5%;
+        }
+}

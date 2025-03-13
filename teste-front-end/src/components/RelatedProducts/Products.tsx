@@ -114,41 +114,18 @@ const Products: React.FC = () => {
   const currentProducts = ProductsObj.products.slice(currentIndex, currentIndex + itensPorPagina);
 
   return (
-    <div className="ProductsList">
-        <div className="ControlButtons">
-            <button onClick={prevPage} disabled={currentIndex === 0}>
-              <img src="/Assets/Anterior.png" alt="" />
-            </button>
-        </div>
-      <div className="carousel-container">
-        {currentProducts.map((product, index) => (
-          <div key={index} className="product-card">
-            <img src={product.photo} alt={product.productName}/>
-            <h3 className="NomeDoProduto">{product.productName}</h3>
-            <p className="DescricaoDoProduto">{product.descriptionShort}</p>
-            <p className="PrecoAntigo">R$ 30,90</p>
-            <p className="PrecoAtual">R$ {product.price}</p>
-            <span className="OpcaoParcelamento">ou 2x de R$49,95 sem juros</span> <br />
-            <span className="Frete">Frete grátis</span> <br />
-            <button onClick={() => openModal(product)}>COMPRAR</button>
-          </div>
-        ))}
-      </div>
-        <div className="ControlButtons"> 
-            <button
-              onClick={nextPage}
-              disabled={currentIndex + itensPorPagina >= ProductsObj.products.length}
-            >
-                <img src="/Assets/Proximo.png" alt="" />
-            </button>
-        </div>
+    <div>
 
-
-
-        {/* renderizando o Modal */}
-        {showModal && selectedProduct && (
+      {/* renderizando o Modal */}
+      {showModal && selectedProduct && (
           <div className="modalContainer">
+            <button onClick={closeModal} className="FecharModal">X</button>
             <div className="modalContent">
+              
+            <div className="ModalImg">
+                  <img src={selectedProduct.photo} alt={selectedProduct.productName} />
+              </div>
+
               <div className="ModalText">
                 <h1>{selectedProduct.productName}</h1>
                 <h2>{selectedProduct.price}</h2>
@@ -165,14 +142,38 @@ const Products: React.FC = () => {
                     <button>COMPRAR</button>
                 </div>
               </div>
-
-              <div className="ModalImg">
-                  <img src={selectedProduct.photo} alt={selectedProduct.productName} />
-              </div>
-
             </div>
           </div>
         )}
+      <div className="ProductsList">
+          <div className="ControlButtons">
+              <button onClick={prevPage} disabled={currentIndex === 0}>
+                <img src="/Assets/Anterior.png" alt="" />
+              </button>
+          </div>
+        <div className="carousel-container">
+          {currentProducts.map((product, index) => (
+            <div key={index} className="product-card">
+              <img src={product.photo} alt={product.productName}/>
+              <h3 className="NomeDoProduto">{product.productName}</h3>
+              <p className="DescricaoDoProduto">{product.descriptionShort}</p>
+              <p className="PrecoAntigo">R$ 30,90</p>
+              <p className="PrecoAtual">R$ {product.price}</p>
+              <span className="OpcaoParcelamento">ou 2x de R$49,95 sem juros</span> <br />
+              <span className="Frete">Frete grátis</span> <br />
+              <button onClick={() => openModal(product)}>COMPRAR</button>
+            </div>
+          ))}
+        </div>
+          <div className="ControlButtons">
+              <button
+                onClick={nextPage}
+                disabled={currentIndex + itensPorPagina >= ProductsObj.products.length}
+              >
+                  <img src="/Assets/Proximo.png" alt="" />
+              </button>
+          </div>
+      </div>
     </div>
   );
 };
