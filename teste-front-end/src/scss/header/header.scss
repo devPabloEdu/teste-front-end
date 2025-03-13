@@ -1,3 +1,10 @@
 @import "./topBar.scss";
 @import "./middleBar.scss";
 @import "./bottomBar.scss";
+
+.AppHeader{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
