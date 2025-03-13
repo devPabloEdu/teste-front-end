@@ -103,12 +103,12 @@ const Products: React.FC = () => {
         {currentProducts.map((product, index) => (
           <div key={index} className="product-card">
             <img src={product.photo} alt={product.productName}/>
-            <h3>{product.productName}</h3>
-            <p>{product.descriptionShort}</p>
-            <p>R$ 30,90</p>
-            <p>R$ {product.price}</p>
-            <span>ou 2x de R$49,95 sem juros</span>
-            <span>Frete grátis</span>
+            <h3 className="NomeDoProduto">{product.productName}</h3>
+            <p className="DescricaoDoProduto">{product.descriptionShort}</p>
+            <p className="PrecoAntigo">R$ 30,90</p>
+            <p className="PrecoAtual">R$ {product.price}</p>
+            <span className="OpcaoParcelamento">ou 2x de R$49,95 sem juros</span> <br />
+            <span className="Frete">Frete grátis</span> <br />
             <button>COMPRAR</button>
           </div>
         ))}

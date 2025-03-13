@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 1300px;
     height: 500px;
 }
@@ -28,12 +28,74 @@
     gap: 8px;
     position: relative;
         .product-card{
+            padding: 8px;
             background-color: white;
             align-items: center;
-            border: solid rgba(0, 0, 0, 0.178) 1px;
+            border: solid rgba(0, 0, 0, 0.082) 1px;
+            box-shadow: rgba(0, 0, 0, 0.151) 1px 5px 15px;
+            border-radius: 5px;
                 img{
                     width: 278px;
                     height: 278px;
+                }
+                .NomeDoProduto{
+                    font-size: 15px;
+                    color: #3F3F40;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    width: 275px;
+                    margin-top: 8px;
+                    margin-bottom: 2px;
+                }
+                .DescricaoDoProduto{
+                    font-size: 12px;
+                    color: #3F3F40;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    width: 275px;
+                    margin-bottom: 8px;
+                }
+                .PrecoAntigo{
+                    text-decoration: line-through;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 14px;
+                    color: #565657;
+                    margin-bottom: 2px;
+                }
+                .PrecoAtual{
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: "Poppins", sans-serif;
+                    color: #3F3F40;
+                    margin-bottom: 4px;
+                }
+                .OpcaoParcelamento{
+                    font-size: 12px;
+                    color: #3F3F40;
+                    font-family: "Poppins", sans-serif;
+                    margin-bottom: 2px;
+                }
+                .Frete{
+                    font-size: 12px;
+                    color: #3442B5;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                }
+                button{
+                    width: 100%;
+                    margin-top: 8px;
+                    border-radius: 4px;
+                    border: none;
+                    background-color: #3442B5;
+                    height: 44px;
+                    color: white;
+                    font-size: 14px;
+                    font-family: "Poppins", sans-serif;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: #181f57;
+                    transition: ease-in 0.4s;
                 }
         }
     
