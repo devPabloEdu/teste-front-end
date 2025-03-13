@@ -90,6 +90,27 @@ const Products: React.FC = () => {
     }
   };
 
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [quantity, setQuantity] = useState(1);
+
+  const openModal = (product : Product) => {
+    setSelectedProduct(product);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false)
+  };
+
+  const increaseQuantity = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const decreaseQuantity = () => {
+    if (quantity > 1) setQuantity(quantity - 1);
+  };
+
   const currentProducts = ProductsObj.products.slice(currentIndex, currentIndex + itensPorPagina);
 
   return (
@@ -109,7 +130,7 @@ const Products: React.FC = () => {
             <p className="PrecoAtual">R$ {product.price}</p>
             <span className="OpcaoParcelamento">ou 2x de R$49,95 sem juros</span> <br />
             <span className="Frete">Frete grátis</span> <br />
-            <button>COMPRAR</button>
+            <button onClick={() => openModal(product)}>COMPRAR</button>
           </div>
         ))}
       </div>
@@ -121,6 +142,37 @@ const Products: React.FC = () => {
                 <img src="/Assets/Proximo.png" alt="" />
             </button>
         </div>
+
+
+
+        {/* renderizando o Modal */}
+        {showModal && selectedProduct && (
+          <div className="modalContainer">
+            <div className="modalContent">
+              <div className="ModalText">
+                <h1>{selectedProduct.productName}</h1>
+                <h2>{selectedProduct.price}</h2>
+                <p>{selectedProduct.descriptionShort}</p>
+                <a href="Veja mais detalhes do produto >"></a>
+
+                <div className="ModalInfoButtons">
+                    <div className="ControleDeQuantidade">
+                        <button onClick={decreaseQuantity}>-</button>
+                        <span>{quantity}</span>
+                        <button onClick={increaseQuantity}>+</button>
+                    </div>
+
+                    <button>COMPRAR</button>
+                </div>
+              </div>
+
+              <div className="ModalImg">
+                  <img src={selectedProduct.photo} alt={selectedProduct.productName} />
+              </div>
+
+            </div>
+          </div>
+        )}
     </div>
   );
 };
