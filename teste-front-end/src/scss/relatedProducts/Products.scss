@@ -1,20 +1,40 @@
-.ControlButtons{
-    height: 32px;
-        button{
-            border:none;
-        }
-}
 .ProductsList{
     display: flex;
-    margin-top: 20px;
     align-items: center;
     justify-content: center;
-        .carousel-container{
+    margin-top: 20px;
+    width: 1300px;
+    height: 500px;
+}
+.ControlButtons{
+    width: 1370px;
+        button{
+            border:none;
+            background-color: rgba(255, 255, 255, 0);
+            height: 32px;
+            width: 32px;
+            cursor: pointer;
+            position: absolute;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
         }
+}
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
         .product-card{
-            width: 304px;
-            height: 500px;
-            background-color: whitesmoke;
+            background-color: white;
+            align-items: center;
+            border: solid rgba(0, 0, 0, 0.178) 1px;
+                img{
+                    width: 278px;
+                    height: 278px;
+                }
         }
+    
 }

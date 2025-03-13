@@ -4,27 +4,27 @@ function Tags() {
     return <nav className="TagsContainer">
         <ul aria-label="Categorias de produtos">
             <li>
-                <a href="/celulares" className="CelularOption">CELULAR</a>
+                <a href="/celulares" className="CelularOption" aria-label="Categoria de celulares">CELULAR</a>
             </li>
 
             <li>
-                <a href="/Acessórios">ACESSÓRIOS</a>
+                <a href="/Acessórios" aria-label="Categoria de Acessórios">ACESSÓRIOS</a>
             </li>
 
             <li>
-                <a href="/Tablets">TABLETS</a>
+                <a href="/Tablets" aria-label="Categoria de Tablets">TABLETS</a>
             </li>
 
             <li>
-                <a href="/Notebooks">NOTEBOOKS</a>
+                <a href="/Notebooks" aria-label="Categoria de Notebooks">NOTEBOOKS</a>
             </li>
 
             <li>
-                <a href="/TVS">TVS</a>
+                <a href="/TVS" aria-label="Categoria de Tv's">TVS</a>
             </li>
 
             <li>
-                <a href="/VerTodos">VER TODOS</a>
+                <a href="/VerTodos" aria-label="Ver itens de todas as categorias">VER TODOS</a>
             </li>
 
         </ul>

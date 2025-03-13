@@ -18,6 +18,11 @@
             color: #3B3B3B;
             font-weight: 400;
         }
+        a:hover{
+            color: #3442B5;
+            font-weight: 600;
+            transition: ease-in 0.1s;   
+        }
         li{
             border: 2PX SOLID #dedede91;
             padding: 10px;
@@ -26,5 +31,9 @@
             width: 214.17px;
             height: 50px;
             align-items: center;
+        }
+        .CelularOption{
+            color: #3442B5;
+            font-weight: 600;
         }
 }

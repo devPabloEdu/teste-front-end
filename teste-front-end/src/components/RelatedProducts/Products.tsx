@@ -99,7 +99,6 @@ const Products: React.FC = () => {
               <img src="/Assets/Anterior.png" alt="" />
             </button>
         </div>
-
       <div className="carousel-container">
         {currentProducts.map((product, index) => (
           <div key={index} className="product-card">
@@ -114,7 +113,6 @@ const Products: React.FC = () => {
           </div>
         ))}
       </div>
-
         <div className="ControlButtons"> 
             <button
               onClick={nextPage}
