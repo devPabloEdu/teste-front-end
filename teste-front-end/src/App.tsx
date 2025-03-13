@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/header/Header';
 import Banner from './components/Banner/Banner';
 import Categories from './components/Categories/Categories';
+import RelatedProducts from './components/RelatedProducts/RelatedProducts';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       </header>
       <Banner />
       <Categories />
+      <RelatedProducts />
     </main>
   );
 }

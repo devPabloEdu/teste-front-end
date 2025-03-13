@@ -1,0 +1,30 @@
+.TagsContainer{
+    width: 1280px;
+    height: 40px;
+    margin-top: 15px;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            list-style-type: none;
+            border-left: 2px solid #dedede8f;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            line-height: 16px;
+            color: #3B3B3B;
+            font-weight: 400;
+        }
+        li{
+            border: 2PX SOLID #dedede91;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            width: 214.17px;
+            height: 50px;
+            align-items: center;
+        }
+}
