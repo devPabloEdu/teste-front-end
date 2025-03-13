@@ -1,0 +1,59 @@
+.HeaderMiddleBar{
+    width: 1280px;
+    height: 72px;
+    border-bottom: solid #F0F0F0 1px;
+}
+.MiddleBarNav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.LogoEconverse{
+    width: 139px;
+    height: 41.3px;
+    cursor: pointer;
+}
+.FormularioDeBusca{
+    display: flex;
+    align-items: center;
+    width: 630px;
+    height: 48px;
+        input{
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-size: medium;
+            border: none;
+            background-color: #F6F5F2;
+            color: $GrayColor;
+            padding: 10px;
+            border-radius: 10px 0px 0px 10px;
+        }
+        button{
+            border: none;
+            height: 48px;
+            background-color: #F6F5F2;
+            padding: 5px;
+            border-radius: 0px 10px 10px 0px;
+        }
+        img{
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+}
+.IconesMiddle {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 12px; 
+        img{
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+}
