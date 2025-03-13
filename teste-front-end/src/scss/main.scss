@@ -1,5 +1,10 @@
 @import "./header/header.scss";
+@import "./banner/banner.scss";
+
 *{
     box-sizing: border-box;
     margin: 0;
+}
+.App{
+    justify-items: center;
 }
