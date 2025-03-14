@@ -128,23 +128,25 @@ const Products: React.FC = () => {
 
               <div className="ModalText">
                 <h1>{selectedProduct.productName}</h1>
-                <h2>{selectedProduct.price}</h2>
+                <h2>R$ {selectedProduct.price}</h2>
                 <p>{selectedProduct.descriptionShort}</p>
-                <a href="Veja mais detalhes do produto >"></a>
+                <a href="">Veja mais detalhes do produto</a>
 
                 <div className="ModalInfoButtons">
                     <div className="ControleDeQuantidade">
-                        <button onClick={decreaseQuantity}>-</button>
+                        <button onClick={decreaseQuantity} className="aumentarOuDiminuir">-</button>
                         <span>{quantity}</span>
-                        <button onClick={increaseQuantity}>+</button>
+                        <button onClick={increaseQuantity} className="aumentarOuDiminuir">+</button>
                     </div>
 
-                    <button>COMPRAR</button>
+                    <button className="ComrparButton">COMPRAR</button>
                 </div>
               </div>
             </div>
           </div>
-        )}
+        )};
+
+
       <div className="ProductsList">
           <div className="ControlButtons">
               <button onClick={prevPage} disabled={currentIndex === 0}>
