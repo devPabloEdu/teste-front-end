@@ -150,7 +150,7 @@ const Products: React.FC = () => {
       <div className="ProductsList">
           <div className="ControlButtons">
               <button aria-label="avamçar para a esquerda" onClick={prevPage} disabled={currentIndex === 0}>
-                <img src="/Assets/Anterior.png" alt="" />
+                <img src="/Assets/Anterior.png" alt="PaginaAnterior" />
               </button>
           </div>
         <div className="carousel-container">
@@ -173,7 +173,7 @@ const Products: React.FC = () => {
                 onClick={nextPage}
                 disabled={currentIndex + itensPorPagina >= ProductsObj.products.length}
               >
-                  <img src="/Assets/Proximo.png" alt="" />
+                  <img src="/Assets/Proximo.png" alt="ProximaPagina" />
               </button>
           </div>
       </div>
