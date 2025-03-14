@@ -1,0 +1,56 @@
+.FooterMainContainer{
+    display: flex;
+    background-color: whitesmoke;
+    width: 1342.5px;
+    height: 282px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 8px;
+        .LogoFooter{
+            width: 164px;
+            height: 48px;
+            margin-bottom: 16px;
+        }
+        p{
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            color: #3F3F40;
+            font-weight: 300;
+            height: 42px;
+        }
+        .RedesImg{
+            margin-left: 16px;
+        }
+}
+.InfosContainerFooter{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    h3{
+        font-family: "Poppins", sans-serif;
+        font-weight:700;
+        color: #3F3F40;
+        font-size: 16px;
+    }
+    a{
+        display: flex;
+        text-decoration: none;
+        justify-content: space-between;
+        margin-top: 18px;
+        font-size: 13px;
+        color: #3F3F40;
+        font-weight: 300;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+.BottomBarFooterContainer{
+    background-color: whitesmoke;
+    width: 1342.5px;
+    height: 46.84px;
+    text-align: center;
+    font-size: 13px;
+    color: #3F3F40;
+    font-family: "Poppins", sans-serif;
+}

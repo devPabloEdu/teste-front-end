@@ -47,6 +47,11 @@
                 font-weight: 500;
                 cursor: pointer;
             }
+            button:hover{
+                color: #ffffff;
+                background-color: #554506;
+                transition: ease-in 0.4s;
+            }
         }
         span{
             font-family: "Poppins", sans-serif;
@@ -55,3 +60,4 @@
             font-weight: 100;
         }
 }
+

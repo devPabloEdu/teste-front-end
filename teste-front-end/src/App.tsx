@@ -7,6 +7,7 @@ import RelatedProductsTwo from './components/RelatedProducts/RelatedProductsTwo'
 import Partners from './components/Partners/Partners';
 import Brands from './components/Brands/Brands';
 import Newsletter from './components/Newsletter/Newsletter';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       <RelatedProductsTwo />
       <Newsletter />
       <footer>
-        
+        <Footer />
       </footer>
     </main>
   );
