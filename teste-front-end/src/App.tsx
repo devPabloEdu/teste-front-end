@@ -6,6 +6,7 @@ import RelatedProducts from './components/RelatedProducts/RelatedProducts';
 import RelatedProductsTwo from './components/RelatedProducts/RelatedProductsTwo';
 import Partners from './components/Partners/Partners';
 import Brands from './components/Brands/Brands';
+import Newsletter from './components/Newsletter/Newsletter';
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
       <Partners />
       <Brands />
       <RelatedProductsTwo />
+      <Newsletter />
+      <footer>
+        
+      </footer>
     </main>
   );
 }
