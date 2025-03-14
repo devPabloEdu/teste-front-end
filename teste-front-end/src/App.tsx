@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import Banner from './components/Banner/Banner';
 import Categories from './components/Categories/Categories';
 import RelatedProducts from './components/RelatedProducts/RelatedProducts';
+import RelatedProductsTwo from './components/RelatedProducts/RelatedProductsTwo';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Categories />
       <RelatedProducts />
+      <RelatedProductsTwo />
     </main>
   );
 }

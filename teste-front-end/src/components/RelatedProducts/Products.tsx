@@ -149,7 +149,7 @@ const Products: React.FC = () => {
 
       <div className="ProductsList">
           <div className="ControlButtons">
-              <button onClick={prevPage} disabled={currentIndex === 0}>
+              <button aria-label="avamçar para a esquerda" onClick={prevPage} disabled={currentIndex === 0}>
                 <img src="/Assets/Anterior.png" alt="" />
               </button>
           </div>
@@ -163,12 +163,13 @@ const Products: React.FC = () => {
               <p className="PrecoAtual">R$ {product.price}</p>
               <span className="OpcaoParcelamento">ou 2x de R$49,95 sem juros</span> <br />
               <span className="Frete">Frete grátis</span> <br />
-              <button onClick={() => openModal(product)}>COMPRAR</button>
+              <button onClick={() => openModal(product)} aria-label="Comprar Celular">COMPRAR</button>
             </div>
           ))}
         </div>
           <div className="ControlButtons">
               <button
+                aria-label="Avançar para a direita"
                 onClick={nextPage}
                 disabled={currentIndex + itensPorPagina >= ProductsObj.products.length}
               >
