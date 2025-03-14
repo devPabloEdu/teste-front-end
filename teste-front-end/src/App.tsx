@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner';
 import Categories from './components/Categories/Categories';
 import RelatedProducts from './components/RelatedProducts/RelatedProducts';
 import RelatedProductsTwo from './components/RelatedProducts/RelatedProductsTwo';
+import Partners from './components/Partners/Partners';
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
       <Banner />
       <Categories />
       <RelatedProducts />
+      <Partners />
       <RelatedProductsTwo />
+      <Partners />
     </main>
   );
 }
