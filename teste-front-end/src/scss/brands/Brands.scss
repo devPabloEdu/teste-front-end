@@ -1,0 +1,28 @@
+.BrandsContainer{
+    height: 268px;
+        h2{
+            font-size: 30px;
+            color: #3442B5;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .BrandDisplay{
+            margin-bottom: 80px;
+            display: flex;
+            gap: 20px;
+            height: 211px;
+        }
+        .MarcasImgContainer{
+            border: solid rgba(0, 0, 0, 0.096) 1px;
+            box-shadow: rgba(0, 0, 0, 0.205) 0px 5px 15px;
+            width: 211px;
+            height: 211px;
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}

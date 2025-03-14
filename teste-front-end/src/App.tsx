@@ -5,6 +5,7 @@ import Categories from './components/Categories/Categories';
 import RelatedProducts from './components/RelatedProducts/RelatedProducts';
 import RelatedProductsTwo from './components/RelatedProducts/RelatedProductsTwo';
 import Partners from './components/Partners/Partners';
+import Brands from './components/Brands/Brands';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
       <Partners />
       <RelatedProductsTwo />
       <Partners />
+      <Brands />
+      <RelatedProductsTwo />
     </main>
   );
 }
