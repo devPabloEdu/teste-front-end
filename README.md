@@ -6,7 +6,7 @@ Este projeto foi criado como parte do desafio de desenvolvedor front-end da Econ
 Ele usa `React`, `Typescript` e `Sass`.
 
 ## SITE
-Você pode acessar o site/projeto no ar clicando neste [link]()
+Você pode acessar o site/projeto no ar clicando neste [link](https://teste-front-nss4dw1s1-pablos-projects-2087e19a.vercel.app/Lan%C3%A7amentos)
 
 ## Requisitos
 
